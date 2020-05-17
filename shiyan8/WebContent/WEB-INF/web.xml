@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>shiyan8</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+        <servlet-name>ServletAddCookie</servlet-name>
+        <servlet-class>servlet.ServletAddCookie</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ServletAddCookie</servlet-name>
+        <url-pattern>/addcookie</url-pattern>
+    </servlet-mapping>   
+  <servlet>
+        <servlet-name>ServletGetCookie</servlet-name>
+        <servlet-class>servlet.ServletGetCookie</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ServletGetCookie</servlet-name>
+        <url-pattern>/getcookie</url-pattern>
+    </servlet-mapping>   
+    <servlet>
+        <servlet-name>ServletRewrite</servlet-name>
+        <servlet-class>servlet.ServletRewrite</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ServletRewrite</servlet-name>
+        <url-pattern>/rewrite</url-pattern>
+    </servlet-mapping>   
+    <servlet>
+        <servlet-name>ServletRewrite01</servlet-name>
+        <servlet-class>servlet.ServletRewrite01</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ServletRewrite01</servlet-name>
+        <url-pattern>/rewrite01</url-pattern>
+    </servlet-mapping>   
+     <servlet>
+        <servlet-name>ServletShopping</servlet-name>
+        <servlet-class>servlet.ServletShopping</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ServletShopping</servlet-name>
+        <url-pattern>/shopping</url-pattern>
+    </servlet-mapping>   
+</web-app>

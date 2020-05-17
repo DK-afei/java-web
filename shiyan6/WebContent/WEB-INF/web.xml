@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>shiyan6</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+   <servlet>
+        <servlet-name>ContextServlet</servlet-name>
+        <servlet-class>ContextServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ContextServlet</servlet-name>
+        <url-pattern>/context</url-pattern>
+    </servlet-mapping>   
+    
+    <servlet>
+        <servlet-name>WebServlet</servlet-name>
+        <servlet-class>WebServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>WebServlet</servlet-name>
+        <url-pattern>/web</url-pattern>
+    </servlet-mapping>   
+
+	  <servlet>
+        <servlet-name>JDBCServlet</servlet-name>
+        <servlet-class>JDBCServlet</servlet-class>
+        <init-param>
+        	<param-name>driver</param-name>
+        	<param-value>com.mysql.jdbc.Driver</param-value>
+        </init-param>
+         <init-param>
+        	<param-name>url</param-name>
+        	<param-value>jdbc:mysql://localhost:3306/test</param-value>
+        </init-param>
+         <init-param>
+        	<param-name>user</param-name>
+        	<param-value>root</param-value>
+        </init-param>
+         <init-param>
+        	<param-name>password</param-name>
+        	<param-value>123321</param-value>
+        </init-param>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>JDBCServlet</servlet-name>
+        <url-pattern>/jdbc</url-pattern>
+    </servlet-mapping>   
+	    
+    <servlet>
+        <servlet-name>AServlet</servlet-name>
+        <servlet-class>AServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>AServlet</servlet-name>
+        <url-pattern>/a</url-pattern>
+    </servlet-mapping>   
+    
+     <servlet>
+        <servlet-name>BServlet</servlet-name>
+        <servlet-class>BServlet</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>BServlet</servlet-name>
+        <url-pattern>/b</url-pattern>
+    </servlet-mapping>   
+    
+    
+     <context-param>
+		   <param-name>global</param-name>
+		   <param-value>全局参数示例</param-value>
+	</context-param>
+	
+	 <context-param>
+		   <param-name>school</param-name>
+		   <param-value>重庆理工大学</param-value>
+	</context-param>
+	
+	 <context-param>
+		   <param-name>college</param-name>
+		   <param-value>计算机科学与工程学院</param-value>
+	</context-param>
+  
+</web-app>

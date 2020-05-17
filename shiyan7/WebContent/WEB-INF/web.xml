@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>shiyan7</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+        <servlet-name>ServletRedirect01</servlet-name>
+        <servlet-class>response.ServletRedirect01</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ServletRedirect01</servlet-name>
+        <url-pattern>/redirect01</url-pattern>
+    </servlet-mapping>   
+    
+   <servlet>
+        <servlet-name>ServletRedirectout</servlet-name>
+        <servlet-class>response.ServletRedirectout</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ServletRedirectout</servlet-name>
+        <url-pattern>/redirectout</url-pattern>
+    </servlet-mapping> 
+    
+     <servlet>
+        <servlet-name>ServletForward</servlet-name>
+        <servlet-class>request.ServletForward</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ServletForward</servlet-name>
+        <url-pattern>/forward</url-pattern>
+    </servlet-mapping>  
+    
+    <servlet>
+        <servlet-name>ServletCheckOut</servlet-name>
+        <servlet-class>request.ServletCheckOut</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ServletCheckOut</servlet-name>
+        <url-pattern>/checkout</url-pattern>
+    </servlet-mapping>  
+       
+     <servlet>
+        <servlet-name>ServletIncluding</servlet-name>
+        <servlet-class>request.ServletIncluding</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ServletIncluding</servlet-name>
+        <url-pattern>/including</url-pattern>
+    </servlet-mapping>  
+      
+      <servlet>
+        <servlet-name>ServletIncluded</servlet-name>
+        <servlet-class>request.ServletIncluded</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ServletIncluded</servlet-name>
+        <url-pattern>/included</url-pattern>
+    </servlet-mapping>  
+    
+     <servlet>
+        <servlet-name>ServletRefresh</servlet-name>
+        <servlet-class>response.ServletRefresh</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ServletRefresh</servlet-name>
+        <url-pattern>/refresh</url-pattern>
+    </servlet-mapping>  
+                
+     <servlet>
+        <servlet-name>ServletCache</servlet-name>
+        <servlet-class>response.ServletCache</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ServletCache</servlet-name>
+        <url-pattern>/cache</url-pattern>
+    </servlet-mapping>  
+           
+     <servlet>
+        <servlet-name>ServletReferer</servlet-name>
+        <servlet-class>request.ServletReferer</servlet-class>
+    </servlet>
+ 
+    <servlet-mapping>
+        <servlet-name>ServletReferer</servlet-name>
+        <url-pattern>/refer</url-pattern>
+    </servlet-mapping>  
+    
+</web-app>
